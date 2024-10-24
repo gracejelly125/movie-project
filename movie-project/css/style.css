@@ -1,0 +1,152 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header */
+header {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    z-index: 100;
+    padding: 20px;
+}
+
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+form {
+    padding: 12px;
+}
+
+.search-text {
+    padding: 14px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-btn {
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.search-btn:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.back-btn {
+    border: none;
+    color: white;
+    background: transparent;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+
+.back-btn:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+
+.bookmark-btn {
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+
+.bookmark-btn:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+/* postings section */
+.postings {
+    max-width: 1260px;
+    margin: auto;
+    padding: 20px;
+}
+
+.postings ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.card>a {
+    display: block;
+    color: #333;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: gray;
+}
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 40px;
+    margin-top: auto;
+}
